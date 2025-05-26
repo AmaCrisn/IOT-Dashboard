@@ -112,8 +112,8 @@ export default function SumpPit() {
       </details>
 
       {/* <!-- Contents --> */}
-      <div className="flex justify-center items-center bg-white p-4 sm:p-8">
-        
+      <div className="grid justify-center items-center bg-white p-4 sm:p-8">
+
       </div>
     </div>
   );
