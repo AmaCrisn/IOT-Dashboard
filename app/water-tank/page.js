@@ -4,26 +4,29 @@ import Link from "next/link";
 
 export default function WaterTank() {
   return (
-    <div className="p-4 sm:p-6">
+    <div className="p-2 sm:p-4">
       <div className="flex flex-row-reverse">
-        <div className="px-5 py-2 text-2xl sm:text-3xl font-bold">
-          x
-        </div>
+        <button className="px-2 text-3xl font-bold">x</button>
       </div>
 
       {/* <!-- Contents --> */}
-      <div className="flex justify-center items-center bg-white p-4 sm:p-8">
+      <div className="flex justify-center items-center bg-white p-6 sm:p-4">
         {/* <!-- Dashboard Wrapper --> */}
         <div className="w-full max-w-6xl">
           {/* <!-- Water Tank Dashboard --> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
             {/* <!-- Left Panel --> */}
             <div className="space-y-6">
+              <div className="px-5 text-2xl sm:text-3xl font-bold">
+                Water Tank 1
+              </div>
               {/* Sensor Status */}
               <div className="w-full rounded-xl p-4 bg-gray-50 shadow-md">
                 <div className="flex justify-between items-center mb-3">
                   <h3 className="text-lg font-semibold">Sensor Status</h3>
-                  <span className="font-semibold bg-yellow-400 py-2 px-4 rounded-xl text-white">Cautious</span>
+                  <span className="font-semibold bg-yellow-400 py-1 px-2 rounded-lg text-white">
+                    Cautious
+                  </span>
                 </div>
                 <div className="flex flex-col gap-2">
                   <div className="flex justify-between">
@@ -110,40 +113,29 @@ export default function WaterTank() {
                     {/* <div className="relative flex h-6 w-6">
                       <div className="absolute inline-flex h-6 w-6 rounded-full bg-green-400 opacity-75 animate-ping"></div>
                       <div
-                        id="indicatorLight"
                         className="relative inline-flex h-6 w-6 rounded-full bg-green-400"
                       ></div>
                     </div> */}
                     {/* Minimum Level*/}
                     <div className="relative flex h-6 w-6">
                       <div className="absolute inline-flex h-6 w-6 rounded-full bg-yellow-300 opacity-75 animate-ping"></div>
-                      <div
-                        id="indicatorLight"
-                        className="relative inline-flex h-6 w-6 rounded-full bg-yellow-300"
-                      ></div>
+                      <div className="relative inline-flex h-6 w-6 rounded-full bg-yellow-300"></div>
                     </div>
                     {/* Very Low Level */}
                     {/* <div className="relative flex h-6 w-6">
                       <div className="absolute inline-flex h-6 w-6 rounded-full bg-red-400 opacity-75 animate-ping"></div>
                       <div
-                        id="indicatorLight"
                         className="relative inline-flex h-6 w-6 rounded-full bg-red-400"
                       ></div>
                     </div> */}
                   </div>
                 </div>
 
-                <div className="relative w-32 h-[300px] sm:w-72 sm:h-[500px]">
+                <div className="relative w-52 h-[300px] sm:h-[400px]">
                   {/* Water Tank */}
                   <div className="relative w-full h-full border-4 border-black rounded-3xl overflow-hidden bg-gray-100 shadow-md">
-                    <div
-                      id="waterLevel"
-                      className="absolute bottom-0 w-full h-2/3 bg-blue-500 transition-all duration-500 rounded-b-2xl"
-                    >
-                      <div
-                        id="markerBar"
-                        className="absolute -top-6 w-full h-fit"
-                      >
+                    <div className="absolute bottom-0 w-full h-2/3 bg-blue-500 transition-all duration-500 rounded-b-2xl">
+                      <div className="absolute -top-6 w-full h-fit">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 1440 320"
