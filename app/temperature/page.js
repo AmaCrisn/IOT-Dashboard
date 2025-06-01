@@ -28,7 +28,15 @@ export default function Temperature({ onClose }) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-5">
                   {/* Temperature Progress Bar */}
                   <div className="rounded-xl p-4 bg-gray-50 shadow-md">
-                    <h3 className="text-lg font-semibold mb-2">Temperature</h3>
+                    <div className="flex">
+                      <h3 className="text-lg font-semibold mb-2">
+                        Temperature
+                      </h3>
+                      {/* <span className="relative flex h-2 w-2">
+                        <span className="absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75 animate-ping"></span>
+                        <span className="relative inline-flex h-2 w-2 rounded-full bg-red-400"></span>
+                      </span> */}
+                    </div>
                     <div className="text-sm mb-2">
                       Current: 27°C / Max: 40°C
                     </div>
@@ -42,7 +50,15 @@ export default function Temperature({ onClose }) {
 
                   {/* Humidity */}
                   <div className="rounded-xl p-4 bg-gray-50 shadow-md">
-                    <h3 className="text-lg font-semibold mb-2">Humidity</h3>
+                    <div className="flex">
+                      <h3 className="text-lg font-semibold mb-2">
+                        Humidity
+                      </h3>
+                      <span className="relative flex h-2 w-2">
+                        <span className="absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75 animate-ping"></span>
+                        <span className="relative inline-flex h-2 w-2 rounded-full bg-red-400"></span>
+                      </span>
+                    </div>
                     <div className="text-sm mb-2">
                       Current: 80% / Min: 30% - Max: 60%
                     </div>
