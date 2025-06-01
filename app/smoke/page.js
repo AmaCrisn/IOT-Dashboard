@@ -26,12 +26,18 @@ export default function Smoke({ onClose }) {
               {/* Dashboard Wrapper */}
               <div className="w-full max-w-6xl">
                 <div className="mb-2 flex flex-col justify-center">
+                  <div className="flex justify-center">
                     <span className="font-bold text-2xl text-center">Air Quality is 167</span>
-                    <span className="text-md text-center text-red-400">Air quality is bad!</span>
+                    <span className="relative flex h-2 w-2">
+                      <span className="absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75 animate-ping"></span>
+                      <span className="relative inline-flex h-2 w-2 rounded-full bg-red-400"></span>
+                    </span>
+                  </div>
+                  <span className="text-md text-center text-red-400">Air quality is bad!</span>
                 </div>
 
                 {/* Smoke indicator bar */}
-                <div className="w-full bg-gray-200 rounded-full h-4">
+                <div className="w-full bg-gray-200 rounded-full h-4 mb-12">
                   <div
                     className="bg-red-500 h-4 rounded-full transition-all duration-300"
                     style={{ width: "83.5%" }}
@@ -41,14 +47,40 @@ export default function Smoke({ onClose }) {
                     <span>0</span>
                     <span>50</span>
                     <span>100</span>
-                    <span>150</span> 
+                    <span>150</span>
                     <span>200</span>
                     {/* Above 150 should be alarm  */}
                   </div>
                 </div>
 
-                <div>
-                    
+                {/* <!-- Overview Table --> */}
+                <div className="w-full rounded-xl bg-gray-50 shadow-md">
+                  <h2 className="text-xl font-semibold mb-2 px-4 pt-4">
+                    Overview
+                  </h2>
+                  <div className="overflow-x-auto overflow-y-auto h-40 text-sm sm:text-md rounded-b-xl">
+                    <table className="w-full table-auto text-left rounded-lg">
+                      <thead className="bg-gray-100 sticky -top-0.5 z-10 shadow-md">
+                        <tr>
+                          <th className="px-4 py-2">Temperature</th>
+                          <th className="px-4 py-2">Humidity</th>
+                          <th className="px-4 py-2">Timestamp</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td className="px-4 py-2">27°C</td>
+                          <td className="px-4 py-2">80%</td>
+                          <td className="px-4 py-2">2025-05-20 12:45</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-2">20°C</td>
+                          <td className="px-4 py-2">77%</td>
+                          <td className="px-4 py-2">2025-05-20 12:45</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
