@@ -62,20 +62,17 @@ export default function Smoke({ onClose }) {
                     <table className="w-full table-auto text-left rounded-lg">
                       <thead className="bg-gray-100 sticky -top-0.5 z-10 shadow-md">
                         <tr>
-                          <th className="px-4 py-2">Temperature</th>
-                          <th className="px-4 py-2">Humidity</th>
+                          <th className="px-4 py-2">Air Quality</th>
                           <th className="px-4 py-2">Timestamp</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td className="px-4 py-2">27°C</td>
-                          <td className="px-4 py-2">80%</td>
+                          <td className="px-4 py-2">167</td>
                           <td className="px-4 py-2">2025-05-20 12:45</td>
                         </tr>
                         <tr>
-                          <td className="px-4 py-2">20°C</td>
-                          <td className="px-4 py-2">77%</td>
+                          <td className="px-4 py-2">150</td>
                           <td className="px-4 py-2">2025-05-20 12:45</td>
                         </tr>
                       </tbody>
