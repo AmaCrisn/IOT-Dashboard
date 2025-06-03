@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function WaterTank({ onClose }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 px-3">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 px-3 duration-300">
       <div className="bg-white rounded-xl shadow-xl w-full max-w-3xl overflow-y-auto py-4 max-h-[90vh]">
         <div className="p-2 sm:p-4">
           {/* Close Button */}
@@ -72,12 +72,17 @@ export default function WaterTank({ onClose }) {
                           <tbody>
                             <tr>
                               <td className="px-4 py-2">Full Level</td>
+                              <td className="px-4 py-2 text-red-400">OFF</td>
+                              <td className="px-4 py-2">2025-05-20 12:40</td>
+                            </tr>
+                            <tr>
+                              <td className="px-4 py-2">Full Level</td>
                               <td className="px-4 py-2 text-green-400">ON</td>
                               <td className="px-4 py-2">2025-05-20 12:45</td>
                             </tr>
                             <tr>
                               <td className="px-4 py-2">Min Level</td>
-                              <td className="px-4 py-2 text-red-400">OFF</td>
+                              <td className="px-4 py-2 text-green-400">ON</td>
                               <td className="px-4 py-2">2025-05-20 12:40</td>
                             </tr>
                           </tbody>
@@ -108,7 +113,7 @@ export default function WaterTank({ onClose }) {
                       </div>
 
                       {/* Water tank visualization */}
-                      <div className="relative w-40 h-[300px] sm:w-52 sm:h-[300px]">
+                      <div className="relative w-40 h-80 sm:w-52">
                         {/* Water Tank */}
                         <div className="relative w-full h-full border-4 border-gray-600 rounded-3xl overflow-hidden bg-gray-100 shadow-md">
                           <div className="absolute bottom-0 w-full h-2/3 bg-blue-500 transition-all duration-500 rounded-b-2xl">
@@ -138,7 +143,7 @@ export default function WaterTank({ onClose }) {
                         </div>
 
                         {/* Min Level Marker */}
-                        <div className="absolute top-1/2 right-full ml-2 flex items-center">
+                        <div className="absolute top-[45%] right-full ml-2 flex items-center">
                           <span className="ml-2 text-sm font-medium text-gray-700">
                             Min Level
                           </span>
