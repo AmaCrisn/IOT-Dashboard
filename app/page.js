@@ -35,10 +35,16 @@ export default function Home() {
                 height="16"
                 fill="currentColor"
                 viewBox="0 0 16 16"
-                className="w-full h-full text-white p-1.5"
+                className="w-full h-full text-white p-1"
               >
-                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
-                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                <path
+                  fillRule="evenodd"
+                  d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"
+                />
+                <path
+                  fillRule="evenodd"
+                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"
+                />
               </svg>
             </div>
           </div>
@@ -79,12 +85,14 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-          {/* Example Card */}
+          {/* Button critical */}
           <div className="relative flex items-center justify-center">
+            {/* Button ping */}
             <span className="absolute h-[70%] w-[55%] rounded-lg bg-red-400 opacity-85 animate-ping z-0"></span>
+            {/* Button content */}
             <Link
               href="/sump-pit"
-              className="bg-red-300 hover:bg-red-400 h-full w-full transition-colors duration-300 uppercase font-bold text-[10px] shadow-md p-4 rounded-xl text-white block z-10"
+              className="bg-red-300 hover:bg-red-400 h-full w-full transition-colors duration-300 uppercase font-bold shadow-md p-4 rounded-xl text-white block z-10"
             >
               <div className="flex flex-col justify-between h-full">
                 <span className="text-xl truncate text-center">Sump Pit</span>
@@ -99,12 +107,11 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Repeat other items... */}
-          {/* These below are unchanged except layout responsiveness */}
+          {/* Button warning */}
           <div className="relative">
             <Link
               href="/water-tank"
-              className="bg-yellow-300 hover:bg-yellow-400 transition-colors duration-300 uppercase font-bold text-[10px] shadow-md p-4 rounded-xl text-white block"
+              className="bg-yellow-300 hover:bg-yellow-400 transition-colors duration-300 uppercase font-bold shadow-md p-4 rounded-xl text-white block"
             >
               <div className="flex flex-col justify-between h-full">
                 <span className="text-xl truncate text-center">Water Tank</span>
@@ -119,10 +126,11 @@ export default function Home() {
             </Link>
           </div>
 
+          {/* Button normal */}
           <div className="relative group">
             <Link
               href="/temperature"
-              className="bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold text-[10px] shadow-md p-4 rounded-xl text-white block"
+              className="bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold shadow-md p-4 rounded-xl text-white block"
             >
               <div className="flex flex-col justify-between h-full">
                 <span className="text-xl truncate text-center">
@@ -139,10 +147,10 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="group bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold text-[10px] shadow-md p-4 rounded-xl hover:cursor-pointer relative text-white">
+          <div className="group bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold shadow-md p-4 rounded-xl hover:cursor-pointer relative text-white">
             <div className="flex flex-col justify-between h-full">
               <span className="text-xl truncate text-center">
-                Smoke Sensors
+               smoke Sensors
               </span>
               <span className="absolute -bottom-2 -right-2 group-hover:z-20">
                 <span className="relative flex h-8 w-8 items-center justify-center">
@@ -154,7 +162,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="group bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold text-[10px] shadow-md p-4 rounded-xl hover:cursor-pointer relative text-white">
+          <div className="group bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold shadow-md p-4 rounded-xl hover:cursor-pointer relative text-white">
             <div className="flex flex-col justify-between h-full">
               <span className="text-xl truncate text-center">
                 Vibration Sensor
@@ -169,7 +177,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="group bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold text-[10px] shadow-md p-4 rounded-xl hover:cursor-pointer relative text-white">
+          <div className="group bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold shadow-md p-4 rounded-xl hover:cursor-pointer relative text-white">
             <div className="flex flex-col justify-between h-full">
               <span className="text-xl truncate text-center">Sump Pit</span>
               <span className="absolute -bottom-2 -right-2 group-hover:z-20">
@@ -186,24 +194,68 @@ export default function Home() {
 
       {/* Right */}
       <div className="w-full md:w-1/5">
+        {/* Account viewing this page */}
         <div className="bg-white shadow-md mt-2 rounded-t-xl text-2xl px-6 py-4 font-bold">
-          Active Account
+          Agents
         </div>
-        <div className="bg-white py-2 px-5 shadow-md rounded-b-xl">
+        <div className="bg-white h-64 overflow-auto py-2 px-5 shadow-md rounded-b-xl">
+          {/* CC */}
           <div className="mt-2 flex flex-col">
-            <span className="text-lg font-semibold mb-2">Standby</span>
+            <span className="text-lg font-semibold mb-2">CC Active</span>
+            <span className="text-sm flex justify-between">
+              <span>Account 1</span>
+              <span>Standby</span>
+            </span>
+            <hr className="border-gray-500 my-2" />
             <span className="text-sm flex justify-between">
               <span>Account 1</span>
               <span>Standby</span>
             </span>
           </div>
           <hr className="border-gray-500 my-2" />
+          {/* BM */}
           <div className="mb-2 flex flex-col">
-            <span className="text-lg font-semibold mb-2">Login</span>
+            <span className="text-lg font-semibold mb-2">BM Active</span>
             <span className="text-sm flex justify-between">
               <span>Account 1</span>
               <span>Standby</span>
             </span>
+            <hr className="border-gray-500 my-2" />
+            <span className="text-sm flex justify-between">
+              <span>Account 1</span>
+              <span>Standby</span>
+            </span>
+            <hr className="border-gray-500 my-2" />
+          </div>
+          {/* Receiptionist */}
+          <div className="mb-2 flex flex-col">
+            <span className="text-lg font-semibold mb-2">
+              Receiptionist Active
+            </span>
+            <span className="text-sm flex justify-between">
+              <span>Account 1</span>
+              <span>Standby</span>
+            </span>
+            <hr className="border-gray-500 my-2" />
+            <span className="text-sm flex justify-between">
+              <span>Account 1</span>
+              <span>Standby</span>
+            </span>
+            <hr className="border-gray-500 my-2" />
+          </div>
+          {/* Logged In */}
+          <div className="mb-2 flex flex-col">
+            <span className="text-lg font-semibold mb-2">Logged In</span>
+            <span className="text-sm flex justify-between">
+              <span>Account 1</span>
+              <span>Logged in</span>
+            </span>
+            <hr className="border-gray-500 my-2" />
+            <span className="text-sm flex justify-between">
+              <span>Account 1</span>
+              <span>Logged in</span>
+            </span>
+            <hr className="border-gray-500 my-2" />
           </div>
         </div>
       </div>
