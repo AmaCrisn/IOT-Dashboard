@@ -40,20 +40,24 @@ export default function Temperature({ onClose }) {
                     <div className="text-sm mb-2">
                       Current: 27°C / Max: 40°C
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-4">
+                    <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
                       <div
                         className="bg-green-400 h-4 rounded-full transition-all duration-300"
                         style={{ width: "27%" }}
                       ></div>
+                      {/* Value indicator */}
+                      <div className="flex justify-between text-sm sm:text-md">
+                        <span>0°C</span>
+                        <span>50°C</span>
+                        <span>100°C</span>
+                      </div>
                     </div>
                   </div>
 
                   {/* Humidity */}
                   <div className="rounded-xl p-4 bg-gray-50 shadow-md">
                     <div className="flex">
-                      <h3 className="text-lg font-semibold mb-2">
-                        Humidity
-                      </h3>
+                      <h3 className="text-lg font-semibold mb-2">Humidity</h3>
                       <span className="relative flex h-2 w-2">
                         <span className="absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75 animate-ping"></span>
                         <span className="relative inline-flex h-2 w-2 rounded-full bg-red-400"></span>
@@ -62,11 +66,17 @@ export default function Temperature({ onClose }) {
                     <div className="text-sm mb-2">
                       Current: 80% / Min: 30% - Max: 60%
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-4">
+                    <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
                       <div
                         className="bg-red-500 h-4 rounded-full transition-all duration-300"
                         style={{ width: "80%" }}
                       ></div>
+                      {/* Value indicator */}
+                      <div className="flex justify-between text-sm sm:text-md">
+                        <span>0%</span>
+                        <span>50%</span>
+                        <span>100%</span>
+                      </div>
                     </div>
                   </div>
                 </div>
