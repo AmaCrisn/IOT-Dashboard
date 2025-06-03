@@ -21,7 +21,7 @@ export default function SumpPit({ onClose }) {
           <div className="px-4 py-2 sm:px-8">
             {/* Node name / Item name */}
             <div className="text-2xl sm:text-3xl font-bold">
-              Sump Pit Switch 1
+              Sump Pit Sensor 1
             </div>
             <div className="mb-4 text-sm sm:text-md">Device ID</div>
             <div className="flex justify-center items-center bg-white">
@@ -34,22 +34,16 @@ export default function SumpPit({ onClose }) {
                     {/* Sensor Status */}
                     <div className="w-full rounded-xl p-4 bg-gray-50 shadow-md">
                       <div className="flex justify-between items-center mb-3">
-                        <h3 className="text-lg font-semibold">Switch Status</h3>
+                        <h3 className="text-lg font-semibold">Sensor Status</h3>
                         <span className="font-semibold bg-yellow-400 py-1 px-2 rounded-lg text-white">
                           Cautious
                         </span>
                       </div>
                       <div className="flex flex-col gap-2">
                         <div className="flex justify-between">
-                          <span>Full Level</span>
+                          <span>Distance</span>
                           <span className="font-semibold text-red-400">
-                            OFF
-                          </span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span>Min Level</span>
-                          <span className="font-semibold text-green-400">
-                            ON
+                            500 cm
                           </span>
                         </div>
                       </div>
@@ -64,20 +58,17 @@ export default function SumpPit({ onClose }) {
                         <table className="w-full table-auto text-left rounded-lg">
                           <thead className="bg-gray-100 sticky -top-0.5 z-10 shadow-md">
                             <tr>
-                              <th className="px-4 py-2">Switch</th>
-                              <th className="px-4 py-2">State</th>
+                              <th className="px-4 py-2">Distance</th>
                               <th className="px-4 py-2">Timestamp</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td className="px-4 py-2">Full Level</td>
-                              <td className="px-4 py-2 text-green-400">ON</td>
+                              <td className="px-4 py-2">500cm</td>
                               <td className="px-4 py-2">2025-05-20 12:45</td>
                             </tr>
                             <tr>
-                              <td className="px-4 py-2">Min Level</td>
-                              <td className="px-4 py-2 text-red-400">OFF</td>
+                              <td className="px-4 py-2">489cm</td>
                               <td className="px-4 py-2">2025-05-20 12:40</td>
                             </tr>
                           </tbody>
@@ -108,7 +99,7 @@ export default function SumpPit({ onClose }) {
                       </div>
 
                       {/* Sump Pit visualization */}
-                      <div className="relative w-40 h-[300px] sm:w-52 sm:h-[300px]">
+                      <div className="relative w-40 h-80 sm:w-52">
                         {/* Sump Pit */}
                         <div className="relative w-full h-full border-4 border-gray-600 rounded-3xl overflow-hidden bg-gray-100 shadow-md">
                           <div className="absolute bottom-0 w-full h-2/3 bg-blue-500 transition-all duration-500 rounded-b-2xl">
@@ -127,22 +118,6 @@ export default function SumpPit({ onClose }) {
                               </svg>
                             </div>
                           </div>
-                        </div>
-
-                        {/* Full Level Marker */}
-                        <div className="absolute -top-3 right-full ml-2 flex items-center">
-                          <span className="ml-2 text-sm font-medium text-gray-700">
-                            Full Level
-                          </span>
-                          <div className="w-4 h-1 bg-gray-700 opacity-75"></div>
-                        </div>
-
-                        {/* Min Level Marker */}
-                        <div className="absolute top-1/2 right-full ml-2 flex items-center">
-                          <span className="ml-2 text-sm font-medium text-gray-700">
-                            Min Level
-                          </span>
-                          <div className="w-4 h-1 bg-gray-700 opacity-75"></div>
                         </div>
                       </div>
                     </div>
