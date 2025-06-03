@@ -7,10 +7,43 @@ export default function Home() {
     <div className="p-4 sm:p-6 h-auto min-h-screen flex flex-col justify-between md:flex-row gap-6">
       {/* Left */}
       <div className="w-full md:w-4/5">
-        <div className="bg-white shadow-md my-2 rounded-xl p-2">
+        <div className="bg-white shadow-md my-2 rounded-xl p-2 flex items-center justify-between">
           <h1 className="px-5 py-2 text-2xl sm:text-3xl font-bold">
             Command Center: Standby
           </h1>
+
+          <div className="flex flex-col sm:flex-row px-5 gap-2 sm:gap-6">
+            <div className="h-12 w-12 rounded-md bg-green-300 shadow-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-up-right"
+                viewBox="0 0 16 16"
+                className="w-full h-full text-white p-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
+                />
+              </svg>
+            </div>
+            <div className="h-12 w-12 rounded-md bg-green-300 shadow-md">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-trash"
+                viewBox="0 0 16 16"
+                className="w-full h-full text-white p-1.5"
+              >
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+              </svg>
+            </div>
+          </div>
         </div>
 
         {/* Category details */}
@@ -161,7 +194,7 @@ export default function Home() {
         <div className="bg-white py-2 px-5 shadow-md rounded-b-xl">
           <div className="mt-2 flex flex-col">
             <span className="text-lg font-semibold mb-2">Standby</span>
-            <span className="text-md flex justify-between">
+            <span className="text-sm flex justify-between">
               <span>Account 1</span>
               <span>Standby</span>
             </span>
@@ -169,7 +202,7 @@ export default function Home() {
           <hr className="border-gray-500 my-2" />
           <div className="mb-2 flex flex-col">
             <span className="text-lg font-semibold mb-2">Login</span>
-            <span className="text-md flex justify-between">
+            <span className="text-sm flex justify-between">
               <span>Account 1</span>
               <span>Standby</span>
             </span>
