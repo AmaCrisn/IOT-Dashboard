@@ -35,8 +35,8 @@ export default function WaterTank({ onClose }) {
                     <div className="w-full rounded-xl p-4 bg-gray-50 shadow-md">
                       <div className="flex justify-between items-center mb-3">
                         <h3 className="text-lg font-semibold">Switch Status</h3>
-                        <span className="font-semibold bg-yellow-400 py-1 px-2 rounded-lg text-white">
-                          Cautious
+                        <span className="font-semibold bg-green-300 py-1 px-2 rounded-lg text-white">
+                          Good
                         </span>
                       </div>
                       <div className="flex flex-col gap-2">
@@ -92,8 +92,8 @@ export default function WaterTank({ onClose }) {
                       {/* Water tank indicator */}
                       <div>
                         {/* Detail status */}
-                        <div className="text-sm text-red-400">
-                          Water is almost empty!
+                        <div className="text-sm text-green-400">
+                          Water is filled!
                         </div>
                         <div className="flex items-center gap-4">
                           <div className="text-xl font-semibold">
@@ -101,8 +101,8 @@ export default function WaterTank({ onClose }) {
                           </div>
                           {/* Status ping */}
                           <div className="relative flex h-6 w-6">
-                            <div className="absolute inline-flex h-6 w-6 rounded-full bg-yellow-300 opacity-75 animate-ping"></div>
-                            <div className="relative inline-flex h-6 w-6 rounded-full bg-yellow-300"></div>
+                            <div className="absolute inline-flex h-6 w-6 rounded-full bg-green-300 opacity-75 animate-ping"></div>
+                            <div className="relative inline-flex h-6 w-6 rounded-full bg-green-300"></div>
                           </div>
                         </div>
                       </div>
