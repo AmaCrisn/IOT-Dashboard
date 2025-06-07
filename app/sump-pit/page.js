@@ -102,8 +102,11 @@ export default function SumpPit({ onClose }) {
                       <div className="relative w-40 h-80 sm:w-52">
                         {/* Sump Pit */}
                         <div className="relative w-full h-full border-4 border-gray-600 rounded-3xl overflow-hidden bg-gray-100 shadow-md">
+                          {/* Centering */}
                           <div className="flex justify-center h-full relative">
+                            {/* Distance dashed line */}
                             <div className="relative border-l-4 h-1/3 border-dashed border-gray-600">
+                              {/* Diastance label */}
                               <span className="absolute left-full top-1/2 -translate-y-1/2 ml-2 whitespace-nowrap">
                                 500 cm
                               </span>
