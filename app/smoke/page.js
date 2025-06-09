@@ -4,19 +4,9 @@ import Link from "next/link";
 
 export default function Smoke({ onClose }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 px-3">
-      <div className="bg-white rounded-xl shadow-xl w-full max-w-3xl overflow-y-auto py-4 max-h-[90vh]">
+    <div className="flex items-center justify-center px-3">
+      <div className="w-3/4 overflow-y-auto py-10">
         <div className="p-2 sm:p-4">
-          {/* Close Button */}
-          <div className="flex flex-row-reverse">
-            <button
-              onClick={onClose}
-              className="px-2 text-3xl font-bold hover:text-red-500"
-            >
-              X
-            </button>
-          </div>
-
           {/* Contents */}
           <div className="px-4 py-2 sm:px-8">
             {/* Node name / Item name */}
@@ -58,7 +48,7 @@ export default function Smoke({ onClose }) {
                   <h2 className="text-xl font-semibold mb-2 px-4 pt-4">
                     Overview
                   </h2>
-                  <div className="overflow-x-auto overflow-y-auto h-40 text-sm sm:text-md rounded-b-xl">
+                  <div className="overflow-x-auto overflow-y-auto h-60 text-sm sm:text-md rounded-b-xl">
                     <table className="w-full table-auto text-left rounded-lg">
                       <thead className="bg-gray-100 sticky -top-0.5 z-10 shadow-md">
                         <tr>
