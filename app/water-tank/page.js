@@ -97,7 +97,7 @@ export default function WaterTank() {
                   </div>
 
                   {/* Water tank visualization */}
-                  <div className="relative w-52 h-80 sm:h-96 sm:w-64">
+                  <div className="relative w-52 h-80 sm:h-96">
                     {/* Water Tank */}
                     <div className="relative w-full h-full border-4 border-gray-600 rounded-3xl overflow-hidden bg-gray-100 shadow-md">
                       <div className="absolute bottom-0 w-full h-2/3 bg-blue-500 transition-all duration-500 rounded-b-2xl">
