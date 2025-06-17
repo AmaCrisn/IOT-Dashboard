@@ -29,17 +29,25 @@ export default function Temperature({ onClose }) {
                     <div className="text-sm mb-2">
                       Current: 27°C / Max: 40°C
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
+                    <div className="w-full bg-gray-200 rounded-full h-4 relative overflow-hidden">
                       <div
                         className="bg-green-400 h-4 rounded-full transition-all duration-300"
                         style={{ width: "27%" }}
                       ></div>
-                      {/* Value indicator */}
-                      <div className="flex justify-between text-sm sm:text-md">
-                        <span>0°C</span>
-                        <span>50°C</span>
-                        <span>100°C</span>
+
+                      {/* Tick marks container */}
+                      <div className="flex justify-between absolute inset-x-0 top-0 h-4 pointer-events-none">
+                        <span className="w-1.5 h-4 bg-gray-700"></span>
+                        <span className="w-1 h-4 bg-gray-700"></span>
+                        <span className="w-1.5 h-4 bg-gray-700"></span>
                       </div>
+                    </div>
+
+                    {/* Value indicator */}
+                    <div className="flex justify-between text-sm sm:text-md">
+                      <span>0°C</span>
+                      <span>50°C</span>
+                      <span>100°C</span>
                     </div>
                   </div>
 
@@ -55,17 +63,25 @@ export default function Temperature({ onClose }) {
                     <div className="text-sm mb-2">
                       Current: 80% / Min: 30% - Max: 60%
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
+                    <div className="w-full bg-gray-200 rounded-full h-4 relative overflow-hidden">
                       <div
                         className="bg-red-500 h-4 rounded-full transition-all duration-300"
                         style={{ width: "80%" }}
                       ></div>
-                      {/* Value indicator */}
-                      <div className="flex justify-between text-sm sm:text-md">
-                        <span>0%</span>
-                        <span>50%</span>
-                        <span>100%</span>
+
+                      {/* Tick marks container */}
+                      <div className="flex justify-between absolute inset-x-0 top-0 h-4 pointer-events-none">
+                        <span className="w-1.5 h-4 bg-gray-700"></span>
+                        <span className="w-1 h-4 bg-gray-700"></span>
+                        <span className="w-1.5 h-4 bg-gray-700"></span>
                       </div>
+                    </div>
+
+                    {/* Value indicator */}
+                    <div className="flex justify-between text-sm sm:text-md">
+                      <span>0%</span>
+                      <span>50%</span>
+                      <span>100%</span>
                     </div>
                   </div>
                 </div>

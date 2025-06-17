@@ -12,28 +12,44 @@ export default function Smoke({ onClose }) {
             {/* Node name / Item name */}
             <div className="text-2xl sm:text-3xl font-bold">Smoke Sensor 1</div>
             <div className="mb-4 text-sm sm:text-md">Device ID</div>
-            <div className="flex justify-center items-center bg-white">
+            <div className="flex justify-center items-center">
               {/* Dashboard Wrapper */}
               <div className="w-full max-w-6xl">
-                <div className="mb-2 flex flex-col justify-center">
-                  <div className="flex justify-center">
-                    <span className="font-bold text-2xl text-center">Air Quality is 167</span>
-                    <span className="relative flex h-2 w-2">
-                      <span className="absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75 animate-ping"></span>
-                      <span className="relative inline-flex h-2 w-2 rounded-full bg-red-400"></span>
+                <div className="bg-gray-50 shadow-md rounded-xl px-8 pb-10 mb-8">
+                  <div className="mb-2 flex flex-col justify-center">
+                    <div className="flex justify-center pt-8">
+                      <span className="font-bold text-2xl text-center">
+                        Air Quality is 167
+                      </span>
+                      <span className="relative flex h-2 w-2">
+                        <span className="absolute inline-flex h-2 w-2 rounded-full bg-red-400 opacity-75 animate-ping"></span>
+                        <span className="relative inline-flex h-2 w-2 rounded-full bg-red-400"></span>
+                      </span>
+                    </div>
+                    <span className="text-md text-center text-red-400">
+                      Air quality is bad!
                     </span>
                   </div>
-                  <span className="text-md text-center text-red-400">Air quality is bad!</span>
-                </div>
 
-                {/* Smoke indicator bar */}
-                <div className="w-full bg-gray-200 rounded-full h-4 mb-12">
-                  <div
-                    className="bg-red-500 h-4 rounded-full transition-all duration-300"
-                    style={{ width: "83.5%" }}
-                  ></div>
+                  {/* Smoke indicator bar */}
+                  <div className="w-full bg-gray-200 rounded-full h-4 relative overflow-hidden">
+                    <div
+                      className="bg-red-500 h-4 rounded-full transition-all duration-300"
+                      style={{ width: "83.5%" }}
+                    ></div>
+
+                    {/* Tick marks container */}
+                    <div className="flex justify-between absolute inset-x-0 top-0 h-4 pointer-events-none">
+                      <span className="w-1.5 h-4 bg-gray-700"></span>
+                      <span className="w-1 h-4 bg-gray-700"></span>
+                      <span className="w-1 h-4 bg-gray-700"></span>
+                      <span className="w-1 h-4 bg-gray-700"></span>
+                      <span className="w-1.5 h-4 bg-gray-700"></span>
+                    </div>
+                  </div>
+
                   {/* Value indicator */}
-                  <div className="flex justify-between text-sm sm:text-md">
+                  <div className="flex justify-between text-sm sm:text-md mt-1">
                     <span>0</span>
                     <span>50</span>
                     <span>100</span>
