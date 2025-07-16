@@ -150,7 +150,7 @@ export default function Home() {
           <div className="group bg-green-300 hover:bg-green-400 transition-colors duration-300 uppercase font-bold shadow-md p-4 rounded-xl hover:cursor-pointer relative text-white">
             <div className="flex flex-col justify-between h-full">
               <span className="text-xl truncate text-center">
-               smoke Sensors
+                smoke Sensors
               </span>
               <span className="absolute -bottom-2 -right-2 group-hover:z-20">
                 <span className="relative flex h-8 w-8 items-center justify-center">
@@ -197,10 +197,11 @@ export default function Home() {
         {/* Account viewing this page */}
         <div className="bg-white shadow-md mt-2 rounded-t-xl text-2xl px-6 py-4 font-bold">
           Agents
+          <hr className="border-gray-500 mt-4"/>
         </div>
         <div className="bg-white h-64 overflow-auto py-2 px-5 shadow-md rounded-b-xl">
           {/* CC */}
-          <div className="mt-2 flex flex-col">
+          <div className="flex flex-col">
             <span className="text-lg font-semibold mb-2">CC Active</span>
             <span className="text-sm flex justify-between">
               <span>Account 1</span>
