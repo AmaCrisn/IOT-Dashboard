@@ -17,7 +17,7 @@ export default function SumpPit() {
             {/* Sump Pit Dashboard */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
               {/* Left Panel */}
-              <div className="space-y-6">
+              <div className="order-2 sm:order-1 space-y-6">
                 {/* Sensor Status */}
                 <div className="w-full rounded-xl p-4 shadow-md">
                   <div className="flex justify-between items-center mb-3">
@@ -63,7 +63,7 @@ export default function SumpPit() {
               </div>
 
               {/* Right Panel */}
-              <div className="flex justify-center md:justify-end w-full">
+              <div className="order-1 sm:order-2 flex justify-center md:justify-end w-full">
                 <div className="flex flex-col items-center space-y-4">
                   {/* Sump Pit indicator */}
                   <div>
