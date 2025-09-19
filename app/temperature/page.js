@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function Temperature({ onClose }) {
   return (
     <div className="flex items-center justify-center px-3">
-      <div className="w-3/4 overflow-y-auto py-10">
-        <div className="p-2 sm:p-4">
-          <div className="px-4 py-2 sm:px-8">
+      <div className="w-5/6 sm:w-3/4 overflow-y-auto py-10">
+        <div className="p-0 sm:p-4">
+          <div className="px-0 py-2 sm:px-8">
             <div className="text-2xl sm:text-3xl font-bold">
               Temperature Sensor 1
             </div>
             <div className="mb-4 text-sm sm:text-md">Device ID</div>
-            <div className="flex justify-center items-center bg-white">
+            <div className="flex justify-center items-center">
               <div className="w-full max-w-6xl">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mb-5">
                   {/* Temperature Progress Bar */}
