@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Draft pages
+app/smoke/fullscreen/
+app/smoke/popup/
+
+app/sump-pit/fullscreen/
+app/sump-pit/popup/
+
+app/temperature/fullscreen/
+app/temperature/popup/
+
+app/water-tank/fullscreen/
+app/water-tank/popup/
